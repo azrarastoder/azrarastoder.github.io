@@ -1,106 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Azra Rastoder | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azra Rastoder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>Azra Rastoder</h1>
-  <p>Electronics Engineer | MSc Candidate | Systems & Cloud Enthusiast</p>
-</header>
+  <header class="hero">
+    <div class="hero-bg">
+  <img src="profile.jpg" class="hero-image" />
+  <img src="tech.jpg" class="hero-tech" />
+  <div class="hero-overlay"></div>
+</div>
 
-<section>
-  <h2>About Me</h2>
+    <nav class="topbar">
+  <div class="nav-left">
+    AZRA RASTODER
+  </div>
+
+  <div class="nav-right">
+  <a href="#about"><span>About</span></a>
+  <a href="#education"><span>Education</span></a>
+  <a href="#experience"><span>Experience</span></a>
+  <a href="#projects"><span>Projects</span></a>
+  <a href="#skills"><span>Skills</span></a>
+  <a href="#contact"><span>Contact</span></a>
+</div>
+
+</nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Electronics • Machine Learning • Systems</p>
+      <h1>Building reliable systems with precision, depth, and style.</h1>
+      <p class="hero-text">
+        A personal website that introduces who I am, what I build, and why my work matters.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    
+    
+<section class="section about-upgraded reveal" id="about">
+
+  <!-- LEFT -->
+  <div class="about-main">
+    <p class="section-label">About</p>
+
+    <h2>
+      I build systems that work in theory.<br>
+      Then I make sure they survive reality.
+    </h2>
+
+    <p class="about-lead">
+My background is in electronics, but I don’t like staying in just one layer. I work across systems, from hardware to infrastructure and data. I’m especially interested in how these pieces interact in real conditions, where things are rarely perfect and systems need to be stable, predictable, and well understood. I enjoy digging into problems, understanding how something behaves under pressure, and making sure it works reliably beyond just a controlled setup.
+    <p class="about-sub">
+      I care about reliability, debugging, and understanding how systems behave under pressure. It’s not just about building something, but knowing exactly why it works.
+    </p>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="about-stack">
+
+   <div class="about-card card-1">
+  <h3>Systems</h3>
   <p>
-    MSc candidate in Electronics with hands-on experience in banking systems,
-    Linux environments, and secure communication infrastructure.
-    Passionate about building scalable, secure systems and working with cloud
-    and automation technologies.
+    I enjoy working on systems across different layers, from embedded devices to backend services, especially when they need to work reliably in real conditions.
   </p>
+</div>
+
+<div class="about-card card-2">
+  <h3>Thinking</h3>
+  <p>
+    If something breaks, I don’t patch it. I trace it.
+    Logs, signals, behavior… there’s always a reason.
+    I just don’t stop until I find it.
+  </p>
+</div>
+
+<div class="about-card card-3">
+  <h3>Focus</h3>
+  <p>
+    Clean demos are nice.
+    Systems that survive real conditions are better.
+    That’s the kind of work I care about.
+  </p>
+</div>
+
+  </div>
+
 </section>
 
-<section>
-  <h2>Skills</h2>
-  <div class="grid">
-    <div>
-      <h3>Systems</h3>
-      <p>Linux, troubleshooting, log analysis, monitoring</p>
+
+
+    <section id="education" class="section experience-layout reveal">
+      <div class="section-header narrow">
+        <p class="section-label">Academic Background</p>
+        <h2>Academic Journey</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-year">2024-now</div>
+          <div class="timeline-content">
+            <h3>MSc Electronics / University of Montenegro</h3>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-year">2024 — 2025</div>
+          <div class="timeline-content">
+            <h3>Spec. Sci Electronics / University of Montenegro</h3>
+            <p>GPA: 9.33</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-year">2020-2024</div>
+          <div class="timeline-content">
+            <h3>BSc Electronics, Telecommunications and Computer Science / University of Montenegro</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+
+<!-- EXPERIENCE -->
+<section class="section reveal" id="experience">
+  <div class="section-header">
+    <p class="section-label">Experience</p>
+    <h2>Professional Journey</h2>
+  </div>
+
+  <div class="experience-list">
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <h3>Officer in Processing Center</h3>
+          <p class="exp-company">Crnogorska Komercijalna Banka</p>
+        </div>
+        <div class="exp-actions">
+          <span>2025 — Present</span>
+          <button
+            class="learn-more-btn"
+            data-role="Officer in Processing Center"
+            data-company="Crnogorska Komercijalna Banka"
+            data-period="2025 — Present"
+            data-content='
+              <p>Worked on maintenance and operational support of e-commerce payment systems in a production banking environment, ensuring reliability and continuous availability of transaction processing platforms.</p>
+              <p>Collaborated with merchants and clients during integration processes, troubleshooting transaction issues through detailed log analysis and resolving real-time system errors across distributed infrastructure.</p>
+              <p>Participated in the integration of a new e-commerce solution, working closely with security teams on WAF-related issues while gaining hands-on experience in digital certificates, certificate chains, key generation, and PGP/PKI systems.</p>
+              <p>Maintained data center operations on HPE NonStop systems, including monitoring, backup procedures, and supporting hardware issue resolution in collaboration with external vendors.</p>
+              <p>Automated repetitive operational tasks using PowerShell and Bash scripting, improving efficiency and reducing manual intervention.</p>
+              <p>Worked on daily clearing processes and analyzed authorization-related issues, contributing to incident handling through log monitoring, root cause analysis, and real-time response in high-pressure environments.</p>
+            '
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
     </div>
-    <div>
-      <h3>Programming</h3>
-      <p>Python, C, C++, MATLAB, SQL</p>
-    </div>
-    <div>
-      <h3>Security</h3>
-      <p>PKI, PGP, certificate management</p>
-    </div>
-    <div>
-      <h3>Embedded</h3>
-      <p>ESP32, Arduino, ARM, IoT systems</p>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <h3>Teaching Assistant – AIoT Academy</h3>
+          <p class="exp-company">AIoT Academy (MANT)</p>
+        </div>
+        <div class="exp-actions">
+          <span>2026</span>
+          <button
+            class="learn-more-btn"
+            data-role="Teaching Assistant – AIoT Academy"
+            data-company="AIoT Academy (MANT)"
+            data-period="2026"
+            data-content='
+              <p>Delivered lectures on the application of AIoT systems in medicine and introduced participants to machine learning fundamentals through structured presentations.</p>
+              <p>Led practical sessions using Edge Impulse, guiding students through the full workflow from data collection and model training to deployment on embedded systems such as Arduino, demonstrated through a fall detection use case.</p>
+              <p>Mentored participants during project development, created detailed technical guidelines, and supported coordination of training sessions in collaboration with the program team.</p>
+              <p>Guided a student team that achieved second place in the academy competition.</p>
+            '
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section>
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Crnogorska Komercijalna Banka</h3>
-    <p>Processing Center | 2025–Present</p>
+<!-- EXPERIENCE MODAL -->
+<div id="exp-modal-overlay" class="exp-modal-overlay" aria-hidden="true">
+  <div class="exp-modal" role="dialog" aria-modal="true" aria-labelledby="exp-modal-title">
+    <button class="exp-modal-close" id="exp-modal-close" aria-label="Close">×</button>
+
+    <div class="exp-modal-top">
+      <p class="section-label" id="exp-modal-period"></p>
+      <h3 id="exp-modal-title"></h3>
+      <p class="exp-company" id="exp-modal-company"></p>
+    </div>
+
+    <div class="exp-modal-body" id="exp-modal-body"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <section id="projects" class="section reveal">
+      <div class="section-header">
+        <p class="section-label">Selected Work</p>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="featured-project">
+  <div class="featured-project-text">
+
+    <p class="project-type">Featured Project</p>
+    <h3>Real-Time ECG Monitoring & AI Analysis System</h3>
+
+    <p>
+      Implemented a real-time ECG monitoring system based on the ESP32 microcontroller and AD8232 analog front-end, enabling accurate acquisition of low-amplitude cardiac bio-signals in non-clinical environments.
+    </p>
+
+    <p>
+      The system addresses challenges such as motion artifacts, baseline drift, and powerline interference, ensuring stable signal capture under real-world conditions.
+    </p>
+
     <ul>
-      <li>Worked on high-availability payment systems</li>
-      <li>Performed system troubleshooting using log analysis</li>
-      <li>Managed PKI certificates and PGP encryption</li>
-      <li>Participated in e-commerce system integration</li>
+      <li>Developed embedded signal processing pipeline (high-pass, low-pass, notch filters)</li>
+      <li>Achieved reliable ECG waveform extraction at 200 Hz sampling rate</li>
+      <li>Integrated cloud-based AI analysis via OpenAI API</li>
+      <li>Enabled real-time diagnostic feedback and remote monitoring</li>
     </ul>
+    <p>
+      The solution demonstrates a scalable and low-cost approach to remote cardiac monitoring,
+      combining embedded systems, IoT communication, and AI-driven analysis.
+    </p>
+
+    <a href="https://github.com/azrarastoder/ESP32-ECG-AI"
+       target="_blank"
+       class="text-link">
+       View on GitHub →
+    </a>
+
   </div>
+
+<div class="featured-project-visual">
+
+  <div class="img-wrapper floating">
+    <img src="SystemBlockDiagram.png" class="project-img">
+    <p class="img-caption">System Architecture</p>
+  </div>
+
+  <div class="img-wrapper floating small-card">
+    <img src="osciloskop.jpg" class="project-img">
+    <p class="img-caption">ECG Signal Output</p>
+  </div>
+
+</div>
+
+</div>
+
+   <div class="project-grid">
+
+  <!-- PROJECT -->
+  <div class="project-card">
+    <div class="project-top">
+      <p class="project-label">PROJECT</p>
+      <h3>Thermocouple System</h3>
+      <p class="project-short">
+        Precision temperature sensing with calibration and analog conditioning.
+      </p>
+    </div>
+
+    <div class="project-hover">
+      <p>
+        Arduino-based thermocouple measurement system with precision analog conditioning and polynomial calibration for accurate temperature sensing in the 0–100 °C range.
+      </p>
+
+      <a href="#" target="_blank">View on GitHub →</a>
+    </div>
+  </div>
+  <!-- PROJECT -->
+  <div class="project-card">
+    <div class="project-top">
+      <p class="project-label">PROJECT</p>
+      <h3>MEOWsic Feeder</h3>
+      <p class="project-short">
+        ML model that detects cat meows.
+      </p>
+    </div>
+
+    <div class="project-hover">
+      <p>
+        Machine learning–based system for detecting and distinguishing cat meows from other environmental sounds.
+      </p>
+
+      <a href="#" target="_blank">View on GitHub →</a>
+    </div>
+  </div>
+
+
+  <!-- PROJECT -->
+  <div class="project-card">
+    <div class="project-top">
+      <p class="project-label">PROJECT</p>
+      <h3>CapSense Interface</h3>
+      <p class="project-short">
+        Interactive capacitive sensing system.
+      </p>
+    </div>
+
+    <div class="project-hover">
+      <p>
+        Interactive capacitive sensing system for real-time 3D hand position tracking and visualization.
+      </p>
+
+      <a href="#" target="_blank">View on GitHub →</a>
+    </div>
+  </div>
+
+</div>   
+
+
+
+    </section>
+
+
+
+
+
+
+
+    
+    <section class="section skills-interactive reveal" id="skills">
+
+  <div class="section-header">
+    <p class="section-label">Skills</p>
+    <h2>Tools & Strengths</h2>
+  </div>
+
+  <div class="skills-wrapper">
+
+    <!-- LEFT -->
+    <div class="skills-menu">
+      <div class="skill-tab active" data-target="systems">Systems</div>
+      <div class="skill-tab" data-target="programming">Programming</div>
+      <div class="skill-tab" data-target="security">Security</div>
+      <div class="skill-tab" data-target="embedded">Embedded & AI</div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="skills-content">
+
+      <div class="skill-panel active" id="systems">
+        <p>Linux • Windows • macOS • Monitoring • Log Analysis and Troubleshooting • High Availability • Backup & Recovery • Data Center • E-commerce Integration • 
+            E-commerce debugging • Cyber-Physical Systems • Shell Scripting • Networking Fundamentals •
+        </p>
+      </div>
+
+      <div class="skill-panel" id="programming">
+        <p>Python • C/C++ • MATLAB • SQL • Bash • PowerShell • Java • HTML • CSS • PHP • VHDL • Verilog</p>
+      </div>
+
+      <div class="skill-panel" id="security">
+        <p>PKI • PGP • WAF • Encryption</p>
+      </div>
+
+      <div class="skill-panel" id="embedded">
+        <p>Embedded System Programming • Microcontroller Development • ESP32 • Arduino • Processing • TensorFlow • PyTorch • Edge AI / TinyML Development • Medical Electronics •
+            Model Quantization and Optimization • Neural Network Deployment on Embedded Devices •
+            Real-Time Data Processing • Sensor Data Acquisition and Fusion • Model Conversion • Performance Profiling and Memory Optimization • Debugging Embedded AI Systems •
+
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
-<section>
-  <h2>Projects</h2>
 
-  <div class="card">
-    <h3>ECG Monitoring System (ESP32)</h3>
-    <p>Real-time biomedical signal processing with embedded AI.</p>
+<section class="section leadership">
+
+  <div class="section-header">
+    <p class="section-label">Leadership & Recognition</p>
+    <h2>International Experience</h2>
   </div>
 
-  <div class="card">
-    <h3>Breath Acetone Detection Mask</h3>
-    <p>IoT system for metabolic monitoring using gas sensors.</p>
-  </div>
+  <div class="leadership-grid">
 
-  <div class="card">
-    <h3>Mewsic Feeder</h3>
-    <p>Embedded ML system for audio classification on-device.</p>
-  </div>
+    <!-- FLEX -->
+    <div class="lead-card">
+      <h3>FLEX Scholar (U.S. Department of State)</h3>
+      <p>
+        Selected for the highly competitive Future Leaders Exchange (FLEX) program 
+        with a 2.3% acceptance rate. Spent one academic year in the United States, 
+        ranking among the top 3% of students at Carl Junction High School, Missouri.
+      </p>
 
-  <div class="card">
-    <h3>3D Capacitive Position Sensor</h3>
-    <p>Gesture-based spatial sensing system.</p>
+      <p>
+        This experience strengthened my ability to adapt quickly to new environments, 
+        communicate across cultures, and perform under unfamiliar conditions.
+      </p>
+    </div>
+
+    <!-- INTERNATIONAL IMPACT -->
+    <div class="lead-card">
+      <h3>International Engagement & Cultural Diplomacy</h3>
+      <p>
+        Delivered presentations about Montenegro to over 500 students in the U.S., 
+        contributing to international education and cultural exchange initiatives.
+      </p>
+
+      <p>
+        Recognized with the Certificate of Distinguished Achievement in International Understanding.
+      </p>
+    </div>
+
+    <!-- LEADERSHIP & WORKSHOPS -->
+    <div class="lead-card">
+      <h3>Leadership & Training</h3>
+      <p>
+        Participated in international workshops across Europe and the U.S. focused on leadership, 
+        education, media literacy, and community engagement.
+      </p>
+
+      <p>
+        Applied knowledge by mentoring peers, contributing to educational initiatives, 
+        and promoting critical thinking and collaboration.
+      </p>
+    </div>
+
   </div>
 
 </section>
 
-<section>
-  <h2>Education</h2>
-  <p>MSc in Electronics – University of Montenegro (2025–Present)</p>
-  <p>Specialist Degree – GPA 9.33</p>
-  <p>BSc Electronics, Telecommunications & CS</p>
-</section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: azra.rastoder01@gmail.com</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/azrarastoder/">Profile</a></p>
-  <p>GitHub: <a href="https://github.com/azrarastoder">GitHub</a></p>
-</section>
+ 
+    
+  </main>
 
-<footer>
-  <p>© 2026 Azra Rastoder</p>
-</footer>
+  <footer id="contact" class="footer-cta">
+    <p class="section-label">Contact</p>
+    <h2>Let’s build systems that actually work.</h2>
+    <p>
+  <a href="mailto:azra.rastoder01@gmail.com">azra.rastoder01@gmail.com</a> • 
+  <a href="https://www.linkedin.com/in/azrarastoder/" target="_blank">LinkedIn</a> • 
+  <a href="https://github.com/azrarastoder" target="_blank">GitHub</a>
+    </p>
+    
+  </footer>
+
+    <!-- SKILLS SCRIPT -->
+  <script>
+    const tabs = document.querySelectorAll('.skill-tab');
+    const panels = document.querySelectorAll('.skill-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('mouseenter', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+      });
+    });
+  </script>
+
+  
+
+  <script>
+  const expOverlay = document.getElementById('exp-modal-overlay');
+  const expClose = document.getElementById('exp-modal-close');
+  const expTitle = document.getElementById('exp-modal-title');
+  const expCompany = document.getElementById('exp-modal-company');
+  const expPeriod = document.getElementById('exp-modal-period');
+  const expBody = document.getElementById('exp-modal-body');
+
+  function openExpModal(btn) {
+    expTitle.textContent = btn.dataset.role || '';
+    expCompany.textContent = btn.dataset.company || '';
+    expPeriod.textContent = btn.dataset.period || '';
+    expBody.innerHTML = btn.dataset.content || '';
+
+    expOverlay.classList.add('active');
+    document.body.classList.add('modal-open');
+    expOverlay.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeExpModal() {
+    expOverlay.classList.remove('active');
+    document.body.classList.remove('modal-open');
+    expOverlay.setAttribute('aria-hidden', 'true');
+  }
+
+  document.querySelectorAll('.learn-more-btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      openExpModal(btn);
+    });
+  });
+
+  expClose.addEventListener('click', closeExpModal);
+
+  expOverlay.addEventListener('click', (e) => {
+    if (e.target === expOverlay) {
+      closeExpModal();
+    }
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && expOverlay.classList.contains('active')) {
+      closeExpModal();
+    }
+  });
+</script>
+
+
+<script>
+document.querySelectorAll('.exp-card, .timeline-content').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    card.style.setProperty('--x', `${x}px`);
+    card.style.setProperty('--y', `${y}px`);
+  });
+});
+</script>
+
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
+      }
+
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+<script>
+  // spriječi browser da pamti scroll
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  // uvijek idi na vrh
+  window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+  });
+</script>
+
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    if (window.location.hash) {
+      history.replaceState(null, null, " ");
+    }
+  });
+</script>
 
 </body>
 </html>
