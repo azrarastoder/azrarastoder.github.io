@@ -469,20 +469,34 @@ My background is in electronics, but I don’t like staying in just one layer. I
   </footer>
 
     <!-- SKILLS SCRIPT -->
-  <script>
-    const tabs = document.querySelectorAll('.skill-tab');
-    const panels = document.querySelectorAll('.skill-panel');
+<script>
+const tabs = document.querySelectorAll('.skill-tab');
+const panels = document.querySelectorAll('.skill-panel');
 
-    tabs.forEach(tab => {
-      tab.addEventListener('mouseenter', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        panels.forEach(p => p.classList.remove('active'));
+function activateTab(tab) {
+  tabs.forEach(t => t.classList.remove('active'));
+  panels.forEach(p => p.classList.remove('active'));
 
-        tab.classList.add('active');
-        document.getElementById(tab.dataset.target).classList.add('active');
-      });
-    });
-  </script>
+  tab.classList.add('active');
+  document.getElementById(tab.dataset.target).classList.add('active');
+}
+
+// desktop (hover)
+tabs.forEach(tab => {
+  tab.addEventListener('mouseenter', () => {
+    if (window.innerWidth > 768) {
+      activateTab(tab);
+    }
+  });
+
+  // mobile (click)
+  tab.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      activateTab(tab);
+    }
+  });
+});
+</script>
 
   
 
