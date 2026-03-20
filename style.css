@@ -1428,3 +1428,30 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 640px) {
+  .hero-content {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-right {
+    display: none;
+  }
+
+  .nav-left {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+  }
+}
